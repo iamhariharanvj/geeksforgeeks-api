@@ -20,6 +20,9 @@ def getCount(text):
     else:
         return 0
 
+@app.route('/', methods=['GET'])
+def hello():
+    return "Welcome to geeksforgeeks-stats-api, For documentation visit:https://www.github.com/iamhariharanvj/geeksforgeeks-api"
 @app.route('/get/<username>', methods=['GET'])
 def get_geeksforgeeks_data(username):
     url = f"https://auth.geeksforgeeks.org/user/{username}"
