@@ -15,7 +15,7 @@ A simple Flask API that retrieves information about a GeeksforGeeks user, includ
 To use this API, make GET requests to the following endpoint:
 
 ```
-https://vercelurl/<username>
+https://geeksforgeeks-api.vercel.app/get/<username>
 ```
 
 Replace `<username>` with the GeeksforGeeks username you want to fetch data for.
