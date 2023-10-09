@@ -16,7 +16,7 @@ def getCount(text):
     match = re.search(pattern, text)
 
     if match:
-        return match.group(1)
+        return int(match.group(1))
     else:
         return 0
 
@@ -38,9 +38,9 @@ def get_geeksforgeeks_data(username):
 
     data = dict()
     data["username"] = username
-    data["overall coding score"] = getScore(scores[0].text)
-    data["total problems solved"] = getScore(scores[1].text)
-    data["monthly coding score"] = getScore(scores[2].text)
+    data["overall_coding_score"] = getScore(scores[0].text)
+    data["total_problems_solved"] = getScore(scores[1].text)
+    data["monthly_coding_score"] = getScore(scores[2].text)
 
     data["problems"] = dict()
 
